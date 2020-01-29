@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cache menu example</title>
+        <link rel="stylesheet" href="./dist/css/lightbox.min.css">
+        <link rel="stylesheet" href="./menu-page.css">
+    </head>
+    <body>
+        <section class="split-from-middle">
+            <div class="drinks-container">
+                <h1 class="menu-heading">KARTA PICA</h1>
+                <div class="card" id="card-1">
+                    <img src="./01.jpg"/>
+                </div>
+                <div class="card" id="card-2">
+                    <a href="./02.jpg" data-lightbox="drinks-items">
+                        <img src="./02.jpg"/>
+                    </a>
+                </div>
+                <div class="card" id="card-3">
+                    <a href="./03.jpg" data-lightbox="drinks-items">
+                        <img src="./03.jpg"/>
+                    </a>
+                </div>
+            </div>
+
+            <!-- <span class="transition-remover" id="first-remover">X</span> -->
+
+            <div class="food-container">
+                <h1 class="menu-heading">JELOVNIK</h1>
+                <div class="card" id="card-11">
+                    <img src="./01.jpg"/>
+                </div>
+                <div class="card" id="card-4">
+                    <a href="./04.jpg" data-lightbox="food-items">
+                        <img src="./04.jpg"/>
+                    </a>
+                </div>
+                <div class="card" id="card-5">
+                    <a href="./05.jpg" data-lightbox="food-items">
+                        <img src="./05.jpg"/>
+                    </a>
+                </div>
+                <div class="card" id="card-6">
+                    <a href="./06.jpg" data-lightbox="food-items">
+                        <img src="./06.jpg"/>
+                    </a>
+                </div>
+            </div>
+
+            <!-- <span class="transition-remover" id="second-remover">X</span> -->
+
+        </section>
+
+    </body>
+    <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="./dist/js/lightbox.min.js"></script>
+    <script src="./menu.js"></script>
+</html>

@@ -1,0 +1,162 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f39c12;
+}
+
+.split-from-middle {
+  max-width: 80%;
+  margin: 32px auto;
+  text-align: center;
+}
+
+.menu-heading {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.card img {
+  max-width: 50%;
+  margin: 16px auto;
+}
+
+#card-1,
+#card-11 {
+  display: none;
+}
+
+@media screen and (min-width: 1281px) {
+  .food-container,
+  .drinks-container {
+    width: 660px;
+    height: 280px;
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .food-container {
+    margin-top: 64px;
+  }
+
+  .card {
+    background: #fff;
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    left: 220px;
+    box-shadow: 1px 2px 2px 0 #aaa;
+    -webkit-transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
+    transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
+  }
+
+  .card img {
+    max-width: 100%;
+  }
+
+  #card-1,
+  #card-11 {
+    z-index: 10;
+    -webkit-transform: rotateZ(-2deg);
+    transform: rotateZ(-2deg);
+    display: block;
+  }
+
+  #card-2,
+  #card-4 {
+    z-index: 9;
+    -webkit-transform: rotateZ(-7deg);
+    transform: rotateZ(-7deg);
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+  }
+
+  #card-3,
+  #card-5 {
+    z-index: 8;
+    -webkit-transform: rotateZ(5deg);
+    transform: rotateZ(5deg);
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+
+  #card-6 {
+    z-index: 7;
+    -webkit-transform: rotateZ(7deg);
+    transform: rotateZ(7deg);
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+
+  #card-2,
+  #card-3,
+  #card-4,
+  #card-5,
+  #card-6 {
+    transition: 0.7s;
+  }
+
+  #card-2:hover,
+  #card-3:hover,
+  #card-4:hover,
+  #card-5:hover,
+  #card-6:hover {
+    transform: scale(1.1) !important;
+  }
+
+  .food-container.transition .card#card-11 {
+    left: -160px;
+  }
+  .drinks-container.transition .card#card-1 {
+    left: -50px;
+  }
+
+  .food-container.transition .card#card-4 {
+    left: 110px;
+  }
+  .drinks-container.transition .card#card-2 {
+    left: 220px;
+  }
+
+  .food-container.transition .card#card-5 {
+    left: 380px;
+  }
+  .drinks-container.transition .card#card-3 {
+    left: 490px;
+  }
+
+  .food-container.transition .card#card-6 {
+    left: 650px;
+  }
+
+  .reset-transform {
+    -webkit-transform: rotateZ(0deg) !important;
+    transform: rotateZ(0deg) !important;
+  }
+
+  .transition-remover {
+    position: absolute;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #first-remover {
+    left: 83vw;
+    top: 7vh;
+  }
+
+  #second-remover {
+    left: 93vw;
+    top: 40vh;
+  }
+}
