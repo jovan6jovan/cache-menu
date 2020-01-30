@@ -61,6 +61,7 @@ body {
 
   .card img {
     max-width: 100%;
+    margin: 0;
   }
 
   #card-1,
@@ -141,22 +142,5 @@ body {
   .reset-transform {
     -webkit-transform: rotateZ(0deg) !important;
     transform: rotateZ(0deg) !important;
-  }
-
-  .transition-remover {
-    position: absolute;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  #first-remover {
-    left: 83vw;
-    top: 7vh;
-  }
-
-  #second-remover {
-    left: 93vw;
-    top: 40vh;
   }
 }
